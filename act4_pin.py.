@@ -1,0 +1,15 @@
+
+correct_pin = "1234"
+tries = 0
+max_tries = 3
+
+while tries < max_tries:
+    pin = input("PIN: ")
+    tries += 1
+
+    if pin == correct_pin:
+        print("Access granted")
+        break
+
+if tries == max_tries and pin != correct_pin:
+    print("Card blocked")
